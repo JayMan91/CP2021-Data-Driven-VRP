@@ -1,8 +1,10 @@
 # CP2021-Data-Driven-VRP
 
-# Overview
+## Overview
 This repository contains code for the paper:
-Data Driven VRP: A Neural Network Model to learn hidden preferences for VRP. 27th International Conference on Principles and Practice of Constraint Programming (CP 2021)
+Data Driven VRP: A Neural Network Model to learn hidden preferences for VRP. 27th International Conference on Principles and Practice of Constraint Programming (CP 2021). 
+
+**Bibtex formatted citation**
 ```
 @inproceedings{mandi2021cp,
  author = {Jayanta Mandi and Rocsildes Canoy and Víctor Bucarey and  Tias Guns},
