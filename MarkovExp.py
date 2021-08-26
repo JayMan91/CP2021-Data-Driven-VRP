@@ -6,8 +6,6 @@ import torch
 from torch import nn, optim
 from torch.autograd import Variable
 import torch.utils.data as data_utils
-import seaborn as sns
-import matplotlib.pyplot as plt
 import itertools
 from MarkovModel import*
 from VRP_model import *
@@ -55,7 +53,6 @@ if __name__ == "__main__":
     lst = []
     for t in test_days:
         for m in models_dict:
-            print(t)
             model = models_dict[m]
             ev = model.evaluation(distance_mat, stops[:(t+1)],
             weekday[:(t+1)],n_vehicles[:(t+1)],
