@@ -13,3 +13,20 @@ Data Driven VRP: A Neural Network Model to learn hidden preferences for VRP. 27t
  year = {2021}
 }
 ```
+## Running the Experiment
+
+To run the experiment first first unzip `data.zip`.
+Run the Markov models by running the command
+```
+python MarkovExp.py
+```
+Run the Neural network models by running the command 
+```
+python NeuralNetExp.py
+```
+Run the decision focused model by running the command
+```
+python DecisionFocusedExp.py
+```
+
+
