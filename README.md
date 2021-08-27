@@ -15,7 +15,7 @@ Data Driven VRP: A Neural Network Model to learn hidden preferences for VRP. 27t
 ```
 ## Running the Experiment
 
-To run the experiment first first unzip `data.zip`.
+To run the experiment first unzip `data.zip`.
 Install the required packages
 ```
 pip install -r requirements.txt
