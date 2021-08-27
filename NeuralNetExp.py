@@ -37,16 +37,23 @@ test_days = [154,160, 166, 173, 180, 187, 194,
         158, 164, 171, 178, 185, 192, 199,
         159, 165, 172, 179, 186, 193, 200]
 
-lookback = 30
+
 
 net_list =  [MarkovwthStopembedding, NoWeek,MarkovwthStopembeddingwithLSTM, 
 MarkovConvolution, NoHist, NoDist,NoMarkov,MarkovwthoutStopembedding,OnlyMarkov]
+hyper_dict = {MarkovwthStopembedding:(50,0.1),
+NoWeek:(50,0.1),
+MarkovwthStopembeddingwithLSTM:(50,0.1),
+MarkovConvolution:(100,0.01),
+NoHist:(100,0.1),
+NoDist:(100,0.1),NoMarkov:(100,0.1),
+MarkovwthoutStopembedding:(100,0.1),OnlyMarkov:(100,0.1)}
 
+lookback = 30
 stop_embedding_size = 40
-epochs,lr = (100,0.01) # change epochs,lr as per Table 5
-
 for net in net_list:
         lst = []
+        epochs,lr = hyper_dict[net]
         for t in test_days:
                 model =TwoStageVRP_padding(epochs= epochs,lookback_period=lookback,
                         lr=lr,net=  net, stop_embedding=True,n_features=1,
