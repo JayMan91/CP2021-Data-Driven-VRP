@@ -1,8 +1,8 @@
 # CP2021-Data-Driven-VRP
 
 ## Overview
-This repository contains code for the paper:
-Data Driven VRP: A Neural Network Model to learn hidden preferences for VRP. 27th International Conference on Principles and Practice of Constraint Programming (CP 2021). 
+This repository contains the code and the data of the paper:
+**Data Driven VRP: A Neural Network Model to learn hidden preferences for VRP**. *27th International Conference on Principles and Practice of Constraint Programming (CP 2021)*. 
 
 **Bibtex formatted citation**
 ```
@@ -15,11 +15,16 @@ Data Driven VRP: A Neural Network Model to learn hidden preferences for VRP. 27t
 ```
 ## Running the Experiment
 
-To run the experiment first unzip `data.zip`.
-Install the required packages
+To run the experiment first unzip `data.zip` by running
+```
+unzip data.zip
+```
+
+Then install the required packages
 ```
 pip install -r requirements.txt
 ```
+Then to reproduce the experimental results, 
 
 Run the Markov models by running the command
 ```
